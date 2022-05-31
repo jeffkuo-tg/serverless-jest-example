@@ -20,19 +20,8 @@ $ sls invoke local -f localGreeting
 
 ## Run the tests
 
-Run the tests via `yarn`:
+Run the tests via `npm`:
 
 ```bash
-$ yarn run jest
-yarn run v1.7.0
-$ /Users/serverless/aws-node-simple-http-endpoint/node_modules/.bin/jest
- PASS  __tests__/handler.test.js
-  ✓ correct greeting is generated (5ms)
-
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
-Snapshots:   0 total
-Time:        1.557s
-Ran all test suites.
-✨  Done in 2.85s.
+$ npm test
 ```
