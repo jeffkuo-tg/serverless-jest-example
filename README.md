@@ -25,3 +25,5 @@ Run the tests via `npm`:
 ```bash
 $ npm test
 ```
+## Reference
+https://www.serverless.com/blog/unit-testing-nodejs-serverless-jest
