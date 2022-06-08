@@ -1,6 +1,9 @@
 const handler = require('../handler');
 
 test('correct greeting is generated', () => {
-  expect(handler.getLocalGreeting("en")).toBe("Hello!");
+  const mockpickLocale = jest.fn();
+  mockpickLocale.mockReturnValueOnce("en");
+
+  expect(handler.getLocalGreeting(mockpickLocale())).toBe("Hello!");
   expect(handler.getLocalGreeting("fr")).toBe("👋");
 });
